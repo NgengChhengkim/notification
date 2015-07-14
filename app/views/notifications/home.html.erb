@@ -1,0 +1,11 @@
+<button id="notification">get notification</button>
+
+<script>
+  $(document).on("click", "#notification", function() {
+    $('.top-left').notify({
+      message: { text: 'Aw yeah, It works!' }
+    }).show();
+  });
+</script>
+
+<div class='top-left'></div>
